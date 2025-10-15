@@ -1,0 +1,8 @@
+<developer>
+    <id>${developerId}</id> 
+    <name>${developerName}</name> 
+    <email>${developerEmail}</email> 
+    <roles>
+        <role>developer</role>
+    </roles>
+</developer>

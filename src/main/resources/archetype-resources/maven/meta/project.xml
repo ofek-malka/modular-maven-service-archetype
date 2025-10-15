@@ -1,0 +1,3 @@
+<name>${project.artifactId}</name>
+<description>${projectDescription}</description>
+<url>https://github.com/${groupId}/${artifactId}</url>
