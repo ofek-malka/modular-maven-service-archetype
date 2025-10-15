@@ -1,4 +1,0 @@
-<connection>scm:git:git://github.com/${groupId}/${artifactId}.git</connection>
-<developerConnection>scm:git:ssh://github.com/${groupId}/${artifactId}.git</developerConnection>
-<url>https://github.com/${groupId}/${artifactId}</url>
-<tag>HEAD</tag>

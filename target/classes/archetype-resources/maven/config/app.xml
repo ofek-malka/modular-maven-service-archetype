@@ -1,2 +1,0 @@
-<main.class>${package}.${mainClass}</main.class>
-<artifact.build.finalName>${project.artifactId}-${project.version}</artifact.build.finalName>
