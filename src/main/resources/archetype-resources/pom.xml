@@ -17,6 +17,10 @@
         <compiler.plugin.version>3.14.0</compiler.plugin.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+		<log4j.core.version>2.25.2</log4j.core.version>
+		<log4j.api.version>2.25.2</log4j.api.version>
+		<log4j.slf4j.impl.version>2.25.2</log4j.slf4j.impl.version>
+		<slf4j.api.version>2.0.17</slf4j.api.version>
     </properties>
 
 	<developers>
@@ -27,6 +31,14 @@
 	
 	<!-- dependencies-->
 	<dependencies>
+	
+		<!-- general runtime-->
+
+
+
+
+		<!-- test-->
+
 		<dependency>
 		  <groupId>io.vertx</groupId>
 		  <artifactId>vertx-junit5</artifactId>
@@ -39,6 +51,32 @@
 		  <artifactId>assertj-core</artifactId>
 		  <version>${assertj.version}</version>
 		  <scope>test</scope>
+		</dependency>
+		
+		
+		<!-- looging-->
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-core</artifactId>
+		  <version>${log4j.core.version}</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-api</artifactId>
+		  <version>${log4j.api.version}</version>
+		</dependency>
+
+		<dependency>
+		  <groupId>org.apache.logging.log4j</groupId>
+		  <artifactId>log4j-slf4j-impl</artifactId>
+		  <version>${log4j.slf4j.impl.version}</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-api</artifactId>
+		  <version>${slf4j.api.version}</version>
 		</dependency>
 	</dependencies>
 	
