@@ -7,28 +7,52 @@ ${projectDescription}
 
 The project is organized in a modular and conventional manner for maintainability and adherence to best practices:
 ```
-src/
-├── main/
-│   ├── java/
-│   │   └── ${package.replace('.', '/')}/${mainClass}.java
-│   └── resources/
-│       └── data.txt
-└── test/
-    ├── java/
-    │   └── ${package.replace('.', '/')}/Test${mainClass}.java
-    └── resources/
-        └── test-data.txt
-
-maven/
-├── build/
-├── config/
-├── dependencies/
-├── meta/
-└── expand-pom.xml
-
-
-pom.xml
-README.md
+    pom.xml
+    README.md
+    │
+    ├───maven
+    │   │   expand-pom.xml
+    │   │
+    │   ├───build
+    │   │       plugins-compile.xml
+    │   │       plugins-container.xml
+    │   │       plugins-custom.xml
+    │   │       plugins-quality.xml
+    │   │       plugins-test.xml
+    │   │
+    │   ├───config
+    │   │       app.xml
+    │   │       build.xml
+    │   │       compiler.xml
+    │   │       versions.xml
+    │   │
+    │   ├───dependencies
+    │   │       logging.xml
+    │   │       runtime.xml
+    │   │       test.xml
+    │   │
+    │   └───meta
+    │           developers.xml
+    │           license.xml
+    │           project.xml
+    │           scm.xml
+    │
+    └───src
+        ├───main
+        │   ├───java
+        │   │   └───${package.replace('.', '/')}/${mainClass}.java
+        │   │           
+        │   │
+        │   └───resources
+        │           log4j2.xml
+        │
+        └───test
+            ├───java
+            │   └─── ${package.replace('.', '/')}/Test${mainClass}.java
+            │           
+            │
+            └───resources
+                    test-data.txt
 ```
 
 ---
