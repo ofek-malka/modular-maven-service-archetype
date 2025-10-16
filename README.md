@@ -1,3 +1,15 @@
+<h1>Modular Maven Service Archetype</h1>
+<p>A modular Maven project template for starting reactive, maintainable Java projects.</p>
+
+<hr>
+
+<h2>💡 Archetype Philosophy</h2>
+<p>This archetype is designed to provide a clean, modular starting point for any Maven project.  
+Its philosophy is to encourage organization and separation of concerns from day one, without enforcing strict rules.  
+The provided folder structure is a <b>suggested skeleton</b> to help developers maintain clarity as the project grows, but it can be extended, reorganized, or deleted as needed.</p>
+
+<hr>
+
 <h2>🏗️ Archetype Structure</h2>
 <p>This archetype provides a modular Maven project template.  
 The folder structure inside the archetype is organized to separate configuration, metadata, and dependencies for clarity:</p>
