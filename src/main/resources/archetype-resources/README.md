@@ -5,7 +5,10 @@ ${projectDescription}
 
 <h2>🏗️ Project Structure</h2>
 
-The project is organized in a modular and conventional manner for maintainability and adherence to best practices:
+This is the **starting modular skeleton** for any Maven project generated from this archetype.  
+It gives you a clean separation of concerns and a solid foundation to build on.  
+You can add more folders, modules, or resources as your project grows.
+
 ```
     pom.xml
     README.md
@@ -57,68 +60,22 @@ The project is organized in a modular and conventional manner for maintainabilit
 
 ---
 
-<h2>🛠️ Modular Maven Setup</h2>
 
-This project uses a modular Maven setup by offloading configuration details to the `maven/` directory.
-
-* **`maven/build/`**: Build plugins (compilation, testing, quality checks)
-* **`maven/config/`**: Shared configuration (Java version, build options)
-* **`maven/dependencies/`**: Separated runtime and test dependencies
-* **`maven/meta/`**: Project metadata (developers, license, SCM)
+> ⚠️ **Note:** The `maven/` folder is purely a **visual and organizational aid**.  
+> It’s not required by Maven itself and can be deleted or reorganized.  
+> Its purpose is to **help you maintain a clear mindset** when your project grows bigger or becomes more complex.
 
 ---
 
-<h2>🚀 Build and Run</h2>
+<h2>🛠️ Modular Maven Setup (Optional)</h2>
 
-<h3>Build the project</h3>
-```bash
-mvn clean install
-```
+The `maven/` directory organizes configuration, dependencies, and build logic separately, giving you a **modular starting point**:
 
+* **`maven/build/`** – Build plugins (compile, test, quality)  
+* **`maven/config/`** – Shared project configuration (Java version, build options)  
+* **`maven/dependencies/`** – Runtime, test, and logging dependencies  
+* **`maven/meta/`** – Project metadata (developers, license, SCM)
 
-<h2>🧩 Generate a new project (from archetype)</h2>
-
-<h3>Use this command for interactive setup:</h3>
-```bash
-mvn archetype:generate \
-  -DarchetypeCatalog=true \
-  -DaskForDefaultPropertyValues=true \
-  -DinteractiveMode=true
-```
-
----
-
-<h2>👤 Developer Information</h2>
-
-| Field | Value |
-| :--- | :--- |
-| **Name** | ${developerName} |
-| **Email** | ${developerEmail} |
-| **ID** | ${developerId} |
-
----
+> ⚠️ This setup is **optional**. You can remove or reorganize it, but keeping it helps maintain clarity as the project grows.
 
 
-<h2> 📝 Setup </h2>
-
-After generating the project, create a `.gitignore` file:
-
-\`\`\`bash
-cat > .gitignore << 'EOF'
-target/
-*.class
-*.jar
-*.war
-*.ear
-*.log
-.idea/
-*.iml
-.vscode/
-.DS_Store
-EOF
-\`\`\`
-
-
-<h2>📄 License</h2>
-
-This project is released under the terms specified in the LICENSE file.
