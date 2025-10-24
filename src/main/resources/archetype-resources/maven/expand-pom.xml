@@ -11,7 +11,7 @@
   <!ENTITY metaDevelopers SYSTEM "meta/developers.xml">
   
   <!ENTITY dependenciesRuntime SYSTEM "dependencies/runtime.xml">
-  <!ENTITY dependenciesLogging SYSTEM "maven/dependencies/logging.xml">
+  <!ENTITY dependenciesLogging SYSTEM "dependencies/logging.xml">
   <!ENTITY dependenciesTest SYSTEM "dependencies/test.xml">
   
   <!ENTITY buildCompile SYSTEM "build/plugins-compile.xml">
